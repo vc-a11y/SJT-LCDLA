@@ -1,0 +1,940 @@
+{
+  "competences": [
+    {
+      "id": "ponctualite",
+      "label": "Ponctualité et assiduité",
+      "short": "Ponctualité",
+      "followups": [
+        "Racontez une fois où vous avez été en retard ou absent à un engagement important. Que s'est-il passé et qu'avez-vous fait ?",
+        "Comment vous organisez-vous pour arriver à l'heure, même les jours difficiles ?"
+      ]
+    },
+    {
+      "id": "fiabilite",
+      "label": "Fiabilité et engagement",
+      "short": "Fiabilité",
+      "followups": [
+        "Parlez-moi d'une tâche longue ou pénible que vous avez menée jusqu'au bout.",
+        "Racontez une erreur que vous avez faite. Comment l'avez-vous annoncée et réparée ?"
+      ]
+    },
+    {
+      "id": "securite",
+      "label": "Sécurité et respect des consignes",
+      "short": "Sécurité",
+      "followups": [
+        "Quelle règle de sécurité vous paraît la plus importante sur un chantier, et pourquoi ?",
+        "Que faites-vous si un collègue ne respecte pas une règle de sécurité devant vous ?"
+      ]
+    },
+    {
+      "id": "equipe",
+      "label": "Esprit d'équipe et communication",
+      "short": "Équipe",
+      "followups": [
+        "Décrivez une situation où vous avez dû signaler une erreur ou un désaccord à un collègue.",
+        "Racontez une fois où vous avez demandé de l'aide. Comment cela s'est-il passé ?"
+      ]
+    },
+    {
+      "id": "client",
+      "label": "Relation client et image",
+      "short": "Client",
+      "followups": [
+        "Comment réagissez-vous si un client est mécontent de votre travail ?",
+        "Que faites-vous concrètement pour laisser un chantier propre et respecter le lieu de vie d'un client ?"
+      ]
+    },
+    {
+      "id": "apprentissage",
+      "label": "Apprentissage et gestion de la critique",
+      "short": "Apprentissage",
+      "followups": [
+        "Racontez une remarque qu'on vous a faite et que vous avez trouvée injuste. Comment avez-vous réagi ?",
+        "Décrivez quelque chose que vous avez appris récemment. Qu'est-ce qui vous a aidé ?"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "p1",
+      "c": "ponctualite",
+      "t": "Vous devez commencer à 7h30 sur un chantier. Vous êtes bloqué dans les transports et n'arriverez qu'à 8h15. Que faites-vous ?",
+      "o": [
+        {
+          "t": "J'arrive et je m'excuse sur place",
+          "q": 1
+        },
+        {
+          "t": "Je préviens mon responsable dès que je sais que je serai en retard, en donnant mon heure d'arrivée",
+          "q": 3
+        },
+        {
+          "t": "J'attends d'être arrivé pour m'expliquer",
+          "q": 0
+        },
+        {
+          "t": "Je ne dis rien et je rattraperai le temps en partant plus tard",
+          "q": 0
+        }
+      ],
+      "ts": "Vous devez commencer à 7h30. Vous êtes bloqué dans les transports. Vous arriverez à 8h15. Que faites-vous ?"
+    },
+    {
+      "id": "p2",
+      "c": "ponctualite",
+      "t": "Vous êtes malade ce matin et vous ne pouvez pas aller travailler.",
+      "o": [
+        {
+          "t": "Je préviens mon responsable avant l'heure de début et je dis quand je pense revenir",
+          "q": 3
+        },
+        {
+          "t": "Je demande à un collègue de prévenir à ma place",
+          "q": 1
+        },
+        {
+          "t": "J'attends de voir si je vais mieux et je préviens ensuite",
+          "q": 1
+        },
+        {
+          "t": "Je ne préviens personne, je reviens demain",
+          "q": 0
+        }
+      ],
+      "ts": "Vous êtes malade ce matin. Vous ne pouvez pas aller travailler. Que faites-vous ?"
+    },
+    {
+      "id": "p3",
+      "c": "ponctualite",
+      "t": "La journée commence à 8h avec la mise en place du poste de travail. Comment gérez-vous votre arrivée ?",
+      "o": [
+        {
+          "t": "J'arrive 10 à 15 minutes avant, en tenue et avec mes outils, pour être prêt à 8h",
+          "q": 3
+        },
+        {
+          "t": "J'arrive à 8h pile et je me change ensuite",
+          "q": 1
+        },
+        {
+          "t": "J'arrive quand je peux, tant que je suis là dans la matinée",
+          "q": 0
+        },
+        {
+          "t": "J'arrive à 7h55 et je me prépare vite",
+          "q": 2
+        }
+      ],
+      "ts": "La journée commence à 8h. Vous devez préparer votre poste de travail. Comment faites-vous ?"
+    },
+    {
+      "id": "p4",
+      "c": "ponctualite",
+      "t": "La pause du midi se termine à 13h. Des collègues proposent de la prolonger de 20 minutes : « Personne ne dira rien. »",
+      "o": [
+        {
+          "t": "Je reprends à 13h, sans faire la leçon aux autres",
+          "q": 3
+        },
+        {
+          "t": "Je reste un peu, puis je repars discrètement",
+          "q": 1
+        },
+        {
+          "t": "Je reste avec eux, on est en groupe",
+          "q": 0
+        },
+        {
+          "t": "Je reste, mais je préviens le responsable qu'on reprendra plus tard",
+          "q": 1
+        }
+      ],
+      "ts": "La pause de midi finit à 13h. Des collègues veulent continuer la pause 20 minutes de plus. Que faites-vous ?"
+    },
+    {
+      "id": "p5",
+      "c": "ponctualite",
+      "t": "Vous avez un rendez-vous administratif important pendant vos heures de travail.",
+      "o": [
+        {
+          "t": "Je préviens à l'avance, je propose de rattraper le temps et je fournis un justificatif",
+          "q": 3
+        },
+        {
+          "t": "Je préviens la veille au soir",
+          "q": 2
+        },
+        {
+          "t": "Je pars sans rien dire et je reviens vite",
+          "q": 0
+        },
+        {
+          "t": "Je dis que je suis malade",
+          "q": 0,
+          "d": 1
+        }
+      ],
+      "ts": "Vous avez un rendez-vous important pendant vos heures de travail. Que faites-vous ?"
+    },
+    {
+      "id": "p6",
+      "c": "ponctualite",
+      "t": "Votre réveil n'a pas sonné. Il est 7h20, vous devez commencer à 7h30 et vous êtes à 30 minutes du site.",
+      "o": [
+        {
+          "t": "J'appelle tout de suite mon responsable, je m'excuse et je viens au plus vite",
+          "q": 3
+        },
+        {
+          "t": "Je me dépêche et j'arrive sans appeler",
+          "q": 1
+        },
+        {
+          "t": "J'envoie un message plus tard en disant que j'étais bloqué dans les transports",
+          "q": 0,
+          "d": 1
+        },
+        {
+          "t": "Je décide de ne pas venir aujourd'hui pour éviter d'arriver en retard",
+          "q": 0
+        }
+      ],
+      "ts": "Votre réveil n'a pas sonné. Il est 7h20. Vous devez commencer à 7h30. Le chantier est à 30 minutes. Que faites-vous ?"
+    },
+    {
+      "id": "f1",
+      "c": "fiabilite",
+      "t": "Il est 16h40. Il vous reste 30 minutes de travail sur la tâche du jour et la journée se termine à 17h. Un collègue vous dit : « Laisse, on finira demain. »",
+      "o": [
+        {
+          "t": "Je finis proprement et je préviens mon responsable que je termine un peu plus tard",
+          "q": 3
+        },
+        {
+          "t": "Je laisse en l'état et je préviens mon responsable que ce sera fini demain",
+          "q": 2
+        },
+        {
+          "t": "Je bâcle la fin pour partir à l'heure",
+          "q": 0
+        },
+        {
+          "t": "Je pars à 17h sans rien dire",
+          "q": 0
+        }
+      ],
+      "ts": "Il est 16h40. Il vous reste 30 minutes de travail. La journée finit à 17h. Un collègue dit : « Laisse, on finira demain. » Que faites-vous ?"
+    },
+    {
+      "id": "f2",
+      "c": "fiabilite",
+      "t": "On vous confie une tâche que vous n'avez jamais faite. Le responsable est parti toute la journée sur un autre chantier.",
+      "o": [
+        {
+          "t": "Je fais ce que je sais faire et je l'appelle si un doute persiste",
+          "q": 3
+        },
+        {
+          "t": "Je fais de mon mieux sans rien demander",
+          "q": 1
+        },
+        {
+          "t": "Je ne fais rien tant qu'il n'est pas revenu",
+          "q": 1
+        },
+        {
+          "t": "Je fais une autre tâche plus facile, il ne verra pas la différence",
+          "q": 0
+        }
+      ],
+      "ts": "On vous donne une tâche que vous n'avez jamais faite. Le responsable n'est pas là de la journée. Que faites-vous ?"
+    },
+    {
+      "id": "f3",
+      "c": "fiabilite",
+      "t": "Vous avez cassé un outil en le forçant. Personne ne vous a vu.",
+      "o": [
+        {
+          "t": "Je préviens le responsable tout de suite et j'explique ce qui s'est passé",
+          "q": 3
+        },
+        {
+          "t": "Je range l'outil à sa place et je ne dis rien",
+          "q": 0,
+          "d": 1
+        },
+        {
+          "t": "Je le signale seulement si on me pose la question",
+          "q": 1
+        },
+        {
+          "t": "Je dis qu'il était déjà cassé",
+          "q": 0,
+          "d": 1
+        }
+      ],
+      "ts": "Vous avez cassé un outil en forçant. Personne ne vous a vu. Que faites-vous ?"
+    },
+    {
+      "id": "f4",
+      "c": "fiabilite",
+      "t": "Vous avez pris du retard sur une tâche, elle est plus longue que prévu. Le responsable vous demande où vous en êtes.",
+      "o": [
+        {
+          "t": "Je dis la vérité, j'explique pourquoi et je propose une solution",
+          "q": 3
+        },
+        {
+          "t": "Je dis que j'ai du retard, sans plus d'explications",
+          "q": 2
+        },
+        {
+          "t": "Je dis que ce sera fini à temps, même si je n'en suis pas sûr",
+          "q": 0,
+          "d": 1
+        },
+        {
+          "t": "Je dis que c'est à cause du matériel",
+          "q": 0
+        }
+      ],
+      "ts": "Vous avez du retard sur une tâche. Elle est plus longue que prévu. Le responsable demande où vous en êtes. Que répondez-vous ?"
+    },
+    {
+      "id": "f5",
+      "c": "fiabilite",
+      "t": "On vous a demandé de nettoyer et ranger en fin de journée. Vous êtes fatigué et les autres sont déjà partis.",
+      "o": [
+        {
+          "t": "Je nettoie et je range correctement, comme demandé",
+          "q": 3
+        },
+        {
+          "t": "Je fais le minimum visible",
+          "q": 1
+        },
+        {
+          "t": "Je fais vite et je laisse le reste pour le lendemain",
+          "q": 1
+        },
+        {
+          "t": "Je pars et je dis que c'est fait",
+          "q": 0,
+          "d": 1
+        }
+      ],
+      "ts": "On vous a demandé de nettoyer et ranger à la fin de la journée. Vous êtes fatigué. Les autres sont déjà partis. Que faites-vous ?"
+    },
+    {
+      "id": "f6",
+      "c": "fiabilite",
+      "t": "Vous avez promis à un collègue de l'aider demain matin. Un autre collègue vous propose une tâche plus intéressante sur ce créneau.",
+      "o": [
+        {
+          "t": "Je tiens ma promesse et je propose à l'autre collègue de le faire une autre fois",
+          "q": 3
+        },
+        {
+          "t": "J'en parle au premier collègue et on décide ensemble avant de changer",
+          "q": 2
+        },
+        {
+          "t": "Je choisis la tâche plus intéressante sans en parler",
+          "q": 0
+        },
+        {
+          "t": "Je dis oui aux deux, on verra bien demain",
+          "q": 0
+        }
+      ],
+      "ts": "Vous avez promis d'aider un collègue demain matin. Un autre collègue vous propose une tâche plus intéressante au même moment. Que faites-vous ?"
+    },
+    {
+      "id": "s1",
+      "c": "securite",
+      "t": "Le responsable est pressé de terminer. Votre tâche demande des lunettes de protection, mais elles sont restées dans le camion, à 5 minutes de marche.",
+      "o": [
+        {
+          "t": "Je fais la tâche rapidement sans lunettes, ça ira vite",
+          "q": 0,
+          "d": 1
+        },
+        {
+          "t": "Je vais chercher mes lunettes, même si cela retarde un peu",
+          "q": 3
+        },
+        {
+          "t": "Je demande une paire de rechange à un collègue, sinon je vais chercher les miennes",
+          "q": 2
+        },
+        {
+          "t": "Je commence sans, et je vais les chercher si je sens un risque",
+          "q": 0,
+          "d": 1
+        }
+      ],
+      "ts": "Votre tâche demande des lunettes de protection. Elles sont restées dans le camion, à 5 minutes de marche. Le responsable est pressé. Que faites-vous ?"
+    },
+    {
+      "id": "s2",
+      "c": "securite",
+      "t": "Vous devez monter sur un escabeau pour travailler en hauteur. Il est un peu bancal et le responsable est pressé.",
+      "o": [
+        {
+          "t": "Je le change, je le cale ou je demande un autre matériel avant de monter",
+          "q": 3
+        },
+        {
+          "t": "Je demande à un collègue de le tenir",
+          "q": 2
+        },
+        {
+          "t": "Je monte doucement en faisant attention",
+          "q": 0,
+          "d": 1
+        },
+        {
+          "t": "Je monte vite pour finir plus vite",
+          "q": 0,
+          "d": 1
+        }
+      ],
+      "ts": "Vous devez monter sur un escabeau pour travailler en hauteur. Il est un peu bancal. Le responsable est pressé. Que faites-vous ?"
+    },
+    {
+      "id": "s3",
+      "c": "securite",
+      "t": "Vous voyez un collègue couper un matériau sans masque dans une pièce pleine de poussière.",
+      "o": [
+        {
+          "t": "Je lui rappelle la règle calmement et je lui propose de l'attendre pour mettre nos masques",
+          "q": 3
+        },
+        {
+          "t": "Je préviens le responsable discrètement",
+          "q": 2
+        },
+        {
+          "t": "Je ne dis rien, chacun est responsable de soi",
+          "q": 0
+        },
+        {
+          "t": "Je fais pareil, ça va plus vite",
+          "q": 0,
+          "d": 1
+        }
+      ],
+      "ts": "Vous voyez un collègue couper un matériau sans masque, dans une pièce pleine de poussière. Que faites-vous ?"
+    },
+    {
+      "id": "s4",
+      "c": "securite",
+      "t": "Vous remarquez une rallonge électrique dont le câble est abîmé, avec un fil visible.",
+      "o": [
+        {
+          "t": "Je ne m'en sers pas, je la mets de côté de façon visible et je préviens le responsable",
+          "q": 3
+        },
+        {
+          "t": "Je la répare avec du ruban adhésif",
+          "q": 0,
+          "d": 1
+        },
+        {
+          "t": "Je m'en sers en faisant attention",
+          "q": 0,
+          "d": 1
+        },
+        {
+          "t": "Je préviens le responsable à la fin de la journée",
+          "q": 1
+        }
+      ],
+      "ts": "Vous voyez une rallonge électrique abîmée, avec un fil visible. Que faites-vous ?"
+    },
+    {
+      "id": "s5",
+      "c": "securite",
+      "t": "On vous demande d'utiliser une machine que vous ne connaissez pas. Personne ne vous a expliqué son fonctionnement.",
+      "o": [
+        {
+          "t": "Je dis que je ne la connais pas et je demande une explication avant de l'utiliser",
+          "q": 3
+        },
+        {
+          "t": "Je lis la notice rapidement et je l'utilise",
+          "q": 1
+        },
+        {
+          "t": "Je l'utilise en regardant comment font les autres",
+          "q": 0,
+          "d": 1
+        },
+        {
+          "t": "Je dis que je sais m'en servir pour ne pas passer pour un débutant",
+          "q": 0,
+          "d": 1
+        }
+      ],
+      "ts": "On vous demande d'utiliser une machine que vous ne connaissez pas. Personne ne vous a expliqué comment elle fonctionne. Que faites-vous ?"
+    },
+    {
+      "id": "s6",
+      "c": "securite",
+      "t": "Vous vous faites une coupure en travaillant. Ça saigne un peu, mais ce n'est pas grave.",
+      "o": [
+        {
+          "t": "Je m'arrête, je soigne la plaie et je préviens le responsable",
+          "q": 3
+        },
+        {
+          "t": "Je mets un pansement et je continue",
+          "q": 1
+        },
+        {
+          "t": "Je ne dis rien, ça va passer",
+          "q": 0
+        },
+        {
+          "t": "Je continue à travailler et j'y penserai à la pause",
+          "q": 0
+        }
+      ],
+      "ts": "Vous vous coupez en travaillant. Ça saigne un peu, ce n'est pas grave. Que faites-vous ?"
+    },
+    {
+      "id": "e1",
+      "c": "equipe",
+      "t": "Vous remarquez qu'un collègue a fait une erreur de mesure sur une partie qui sera bientôt cachée par la finition.",
+      "o": [
+        {
+          "t": "Je lui en parle discrètement et je propose de reprendre ensemble",
+          "q": 3
+        },
+        {
+          "t": "Je préviens directement le responsable sans en parler au collègue",
+          "q": 2
+        },
+        {
+          "t": "Je ne dis rien, ce n'est pas mon travail",
+          "q": 0
+        },
+        {
+          "t": "Je corrige moi-même sans rien dire",
+          "q": 1
+        }
+      ],
+      "ts": "Vous voyez qu'un collègue a fait une erreur de mesure. Cette partie sera bientôt cachée par la finition. Que faites-vous ?"
+    },
+    {
+      "id": "e2",
+      "c": "equipe",
+      "t": "Vous travaillez en binôme avec un collègue plus lent que vous. Le responsable fait remarquer que ça avance doucement.",
+      "o": [
+        {
+          "t": "Je propose à mon collègue de répartir les tâches autrement et de l'aider",
+          "q": 3
+        },
+        {
+          "t": "Je dis au responsable que c'est mon collègue le problème",
+          "q": 0
+        },
+        {
+          "t": "Je fais tout à sa place sans rien dire",
+          "q": 1
+        },
+        {
+          "t": "Je continue à mon rythme",
+          "q": 1
+        }
+      ],
+      "ts": "Vous travaillez à deux avec un collègue plus lent que vous. Le responsable remarque que ça avance doucement. Que faites-vous ?"
+    },
+    {
+      "id": "e3",
+      "c": "equipe",
+      "t": "Un collègue plus ancien vous parle sèchement et se moque de vous devant les autres.",
+      "o": [
+        {
+          "t": "J'en parle calmement avec lui en privé, et sinon au responsable",
+          "q": 3
+        },
+        {
+          "t": "Je lui réponds sur le même ton devant tout le monde",
+          "q": 0
+        },
+        {
+          "t": "Je ne dis rien et je garde ça pour moi",
+          "q": 1
+        },
+        {
+          "t": "J'en parle aux autres collègues dans son dos",
+          "q": 0
+        }
+      ],
+      "ts": "Un collègue plus ancien vous parle durement et se moque de vous devant les autres. Que faites-vous ?"
+    },
+    {
+      "id": "e4",
+      "c": "equipe",
+      "t": "Vous avez besoin d'un outil qu'un collègue est en train d'utiliser.",
+      "o": [
+        {
+          "t": "Je lui demande combien de temps il en a besoin et je m'organise en attendant",
+          "q": 3
+        },
+        {
+          "t": "Je le prends dès qu'il le pose, sans rien dire",
+          "q": 1
+        },
+        {
+          "t": "Je le prends pendant qu'il a le dos tourné",
+          "q": 0
+        },
+        {
+          "t": "Je vais me plaindre au responsable",
+          "q": 0
+        }
+      ],
+      "ts": "Vous avez besoin d'un outil. Un collègue est en train de l'utiliser. Que faites-vous ?"
+    },
+    {
+      "id": "e5",
+      "c": "equipe",
+      "t": "Un collègue d'un autre métier doit passer avant vous dans la pièce, ce qui retarde votre travail.",
+      "o": [
+        {
+          "t": "On s'organise ensemble sur qui passe quand, et je préviens le responsable si le planning change",
+          "q": 3
+        },
+        {
+          "t": "Je travaille en même temps que lui, chacun se débrouille",
+          "q": 0
+        },
+        {
+          "t": "J'attends sans rien dire et je perds du temps",
+          "q": 1
+        },
+        {
+          "t": "Je demande au responsable de trancher tout de suite",
+          "q": 2
+        }
+      ],
+      "ts": "Un collègue d'un autre métier doit passer avant vous dans la pièce. Cela retarde votre travail. Que faites-vous ?"
+    },
+    {
+      "id": "e6",
+      "c": "equipe",
+      "t": "En fin de journée, vous avez fini votre tâche mais un collègue est encore en difficulté sur la sienne.",
+      "o": [
+        {
+          "t": "Je lui propose mon aide, puis je préviens le responsable quand on a terminé",
+          "q": 3
+        },
+        {
+          "t": "Je pars, j'ai fini ma journée",
+          "q": 1
+        },
+        {
+          "t": "Je lui dis que ça se voit qu'il est lent",
+          "q": 0
+        },
+        {
+          "t": "Je préviens le responsable que mon collègue est en retard, puis je pars",
+          "q": 1
+        }
+      ],
+      "ts": "Vous avez fini votre tâche. Un collègue a encore des difficultés sur la sienne. Que faites-vous ?"
+    },
+    {
+      "id": "c1",
+      "c": "client",
+      "t": "Vous travaillez chez un particulier. Le client vous demande de faire « un petit truc en plus », non prévu au devis, pendant que vous êtes là.",
+      "o": [
+        {
+          "t": "Je le fais rapidement pour lui rendre service",
+          "q": 1
+        },
+        {
+          "t": "Je lui explique aimablement que j'en parle à mon responsable, qui le recontactera",
+          "q": 3
+        },
+        {
+          "t": "Je refuse sèchement, ce n'est pas prévu",
+          "q": 1
+        },
+        {
+          "t": "Je le fais et je ne dis rien au responsable",
+          "q": 0
+        }
+      ],
+      "ts": "Vous travaillez chez un particulier. Le client vous demande de faire un petit travail en plus, non prévu, pendant que vous êtes là. Que faites-vous ?"
+    },
+    {
+      "id": "c2",
+      "c": "client",
+      "t": "Vous travaillez dans un logement occupé. Vous devez traverser le salon avec du matériel et de la poussière.",
+      "o": [
+        {
+          "t": "Je protège le sol, je passe proprement et je nettoie derrière moi",
+          "q": 3
+        },
+        {
+          "t": "Je passe rapidement et je nettoierai à la fin de la journée",
+          "q": 1
+        },
+        {
+          "t": "Je passe sans faire attention, le client sait que c'est un chantier",
+          "q": 0
+        },
+        {
+          "t": "Je demande au client de ne pas rester dans la pièce",
+          "q": 1
+        }
+      ],
+      "ts": "Vous travaillez dans un logement occupé. Vous devez traverser le salon avec du matériel et de la poussière. Que faites-vous ?"
+    },
+    {
+      "id": "c3",
+      "c": "client",
+      "t": "Le client est mécontent et vous parle avec agressivité au sujet d'un défaut de finition.",
+      "o": [
+        {
+          "t": "J'écoute calmement, je reformule le problème et je préviens mon responsable pour trouver une solution",
+          "q": 3
+        },
+        {
+          "t": "Je lui réponds avec la même agressivité",
+          "q": 0
+        },
+        {
+          "t": "Je m'excuse et je promets de tout refaire gratuitement",
+          "q": 1
+        },
+        {
+          "t": "Je m'éloigne sans rien dire",
+          "q": 1
+        }
+      ],
+      "ts": "Le client n'est pas content. Il vous parle avec agressivité à propos d'un défaut de finition. Que faites-vous ?"
+    },
+    {
+      "id": "c4",
+      "c": "client",
+      "t": "Votre téléphone sonne pendant que vous travaillez chez un client. Vous avez aussi envie de regarder vos messages.",
+      "o": [
+        {
+          "t": "Je le mets en silencieux et je ne le regarde que pendant mes pauses",
+          "q": 3
+        },
+        {
+          "t": "Je réponds vite, c'est bref",
+          "q": 1
+        },
+        {
+          "t": "Je regarde mon téléphone en travaillant, ça ne fait de mal à personne",
+          "q": 0
+        },
+        {
+          "t": "Je passe un appel personnel dans la pièce où travaille le client",
+          "q": 0
+        }
+      ],
+      "ts": "Votre téléphone sonne pendant que vous travaillez chez un client. Vous avez aussi envie de regarder vos messages. Que faites-vous ?"
+    },
+    {
+      "id": "c5",
+      "c": "client",
+      "t": "Vous avez fini la journée chez un client. Le chantier est en désordre : gravats et outils par terre.",
+      "o": [
+        {
+          "t": "Je nettoie et je range, je laisse les lieux propres pour le lendemain",
+          "q": 3
+        },
+        {
+          "t": "Je range mes outils et je laisse le reste",
+          "q": 1
+        },
+        {
+          "t": "Je laisse tout, je m'en occuperai demain matin",
+          "q": 0
+        },
+        {
+          "t": "Je nettoie seulement là où le client passe",
+          "q": 2
+        }
+      ],
+      "ts": "Vous avez fini la journée chez un client. Il y a des gravats et des outils par terre. Que faites-vous ?"
+    },
+    {
+      "id": "c6",
+      "c": "client",
+      "t": "Le client vous pose une question technique et vous n'êtes pas sûr de la réponse.",
+      "o": [
+        {
+          "t": "Je dis honnêtement que je vérifie avec mon responsable et que je reviens vers lui",
+          "q": 3
+        },
+        {
+          "t": "J'invente une réponse pour avoir l'air compétent",
+          "q": 0,
+          "d": 1
+        },
+        {
+          "t": "Je dis que ce n'est pas mon problème",
+          "q": 0
+        },
+        {
+          "t": "Je réponds ce que je pense être vrai, en précisant que je ne suis pas certain",
+          "q": 2
+        }
+      ],
+      "ts": "Le client vous pose une question technique. Vous n'êtes pas sûr de la réponse. Que faites-vous ?"
+    },
+    {
+      "id": "a1",
+      "c": "apprentissage",
+      "t": "Votre responsable vous fait une remarque devant toute l'équipe sur un travail mal fait. Vous trouvez qu'elle est injuste.",
+      "o": [
+        {
+          "t": "J'écoute, je corrige, puis j'en discute calmement en tête-à-tête si je ne suis pas d'accord",
+          "q": 3
+        },
+        {
+          "t": "Je réponds tout de suite devant tout le monde pour me défendre",
+          "q": 0
+        },
+        {
+          "t": "Je dis « ok », je refais sans conviction et j'en parle aux collègues",
+          "q": 1
+        },
+        {
+          "t": "Je demande au responsable de me montrer précisément ce qui ne va pas, puis je refais",
+          "q": 2
+        }
+      ],
+      "ts": "Votre responsable vous fait une remarque devant toute l'équipe sur un travail mal fait. Vous trouvez que c'est injuste. Que faites-vous ?"
+    },
+    {
+      "id": "a2",
+      "c": "apprentissage",
+      "t": "Votre formateur vous montre une technique différente de celle que vous connaissiez. Vous pensez que la vôtre est meilleure.",
+      "o": [
+        {
+          "t": "J'essaie sa méthode, je compare, puis j'en discute avec lui en posant des questions",
+          "q": 3
+        },
+        {
+          "t": "Je continue à ma manière sans rien dire",
+          "q": 0
+        },
+        {
+          "t": "Je dis que sa méthode est dépassée",
+          "q": 0
+        },
+        {
+          "t": "Je fais comme il dit, sans chercher à comprendre pourquoi",
+          "q": 2
+        }
+      ],
+      "ts": "Votre formateur vous montre une technique différente de celle que vous connaissiez. Vous pensez que la vôtre est meilleure. Que faites-vous ?"
+    },
+    {
+      "id": "a3",
+      "c": "apprentissage",
+      "t": "Vous avez fait deux fois de suite la même erreur sur une tâche.",
+      "o": [
+        {
+          "t": "Je demande qu'on me montre à nouveau, je note les points clés et je vérifie avant de continuer",
+          "q": 3
+        },
+        {
+          "t": "Je continue en espérant que ça passera",
+          "q": 0
+        },
+        {
+          "t": "Je me dis que ce n'est pas si grave",
+          "q": 0
+        },
+        {
+          "t": "Je pense que je ne suis pas fait pour ce métier et je me décourage",
+          "q": 1
+        }
+      ],
+      "ts": "Vous avez fait la même erreur deux fois de suite sur une tâche. Que faites-vous ?"
+    },
+    {
+      "id": "a4",
+      "c": "apprentissage",
+      "t": "Un collègue moins ancien que vous maîtrise mieux une tâche. Il vous propose de vous la montrer.",
+      "o": [
+        {
+          "t": "J'accepte avec plaisir et je pose des questions",
+          "q": 3
+        },
+        {
+          "t": "J'accepte, mais je ne l'écoute pas vraiment",
+          "q": 1
+        },
+        {
+          "t": "Je refuse, je préfère me débrouiller seul",
+          "q": 1
+        },
+        {
+          "t": "Je lui dis que je n'ai pas besoin de l'aide de quelqu'un de moins expérimenté",
+          "q": 0
+        }
+      ],
+      "ts": "Un collègue moins ancien que vous maîtrise mieux une tâche. Il vous propose de vous la montrer. Que faites-vous ?"
+    },
+    {
+      "id": "a5",
+      "c": "apprentissage",
+      "t": "Vous ratez un test pratique en formation alors que vous vous étiez bien préparé.",
+      "o": [
+        {
+          "t": "Je demande ce qui n'a pas fonctionné, je m'entraîne sur ces points et je repasse",
+          "q": 3
+        },
+        {
+          "t": "Je me dis que le test était injuste",
+          "q": 0
+        },
+        {
+          "t": "Je laisse tomber ce module",
+          "q": 0
+        },
+        {
+          "t": "Je regarde comment ont fait ceux qui ont réussi pour m'en inspirer",
+          "q": 2
+        }
+      ],
+      "ts": "Vous ratez un test pratique en formation. Pourtant vous vous étiez bien préparé. Que faites-vous ?"
+    },
+    {
+      "id": "a6",
+      "c": "apprentissage",
+      "t": "Votre responsable vous répète plusieurs fois la même chose : il faut mieux ranger votre poste de travail.",
+      "o": [
+        {
+          "t": "Je prends la remarque au sérieux, je change mes habitudes et je demande un retour",
+          "q": 3
+        },
+        {
+          "t": "J'attends que ça passe",
+          "q": 0
+        },
+        {
+          "t": "Je range seulement quand il regarde",
+          "q": 0
+        },
+        {
+          "t": "Je range un peu, mais sans changer mes habitudes",
+          "q": 1
+        }
+      ],
+      "ts": "Votre responsable vous répète plusieurs fois la même chose : il faut mieux ranger votre poste de travail. Que faites-vous ?"
+    }
+  ]
+}
